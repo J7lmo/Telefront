@@ -2,8 +2,8 @@ html,body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: red;
-    font-size: 40px;
+    background-color: rgb(26, 28, 57);
+    font-size: 20px;
 }
 .choice{
     display: flex;
@@ -16,13 +16,13 @@ p{
     text-align: center;
 }
 .choice img{
-    width: 60%;
-    height: 60%;
+    width: 85%;
+    height: 85%;
     border-radius: 30px;
 }
 h1{
     color: white;
-    font-size:  60px;
+    font-size:  30px;
     text-transform: uppercase;
 }
 .choice button{
@@ -43,11 +43,11 @@ form {
 
 label, input, select, textarea {
     margin-bottom: 10px;
-    font-size: 40px;
+    font-size: 20px;
     outline: none;
 }
 button{
-    font-size: 40px;
+    font-size: 13px;
 }
 input[type="submit"] {
     background-color: #4CAF50;
@@ -75,7 +75,7 @@ header{
 }
 
 .popup img{
-    width: 25%;
+    width: 15%;
     height: auto;
 }
 #change_platforme{
@@ -102,8 +102,8 @@ input[type="checkbox"]{
     appearance: none; /* Masque la case à cocher par défaut */
     -webkit-appearance: none; /* Pour les navigateurs WebKit (Chrome, Safari) */
     -moz-appearance: none; /* Pour Firefox */
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     padding: 0px;
     margin: 0px;
     border: 2px solid #45a049; /* Bordure de la case à cocher */
