@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <!-- Load the Telegram Library -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <!--Load the AngularJS Library-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="choice" class="choice">
+      <h1>choisisez votre Plateforme</h1>
+      <button id="uber_eat" onclick="openPopup()">
+        <img src="./image/uber-eats-logo.png" alt="Uber_eat">
+      </button>
+      <button id="delivroo">
+        <img src="./image/delivroo.jpg" alt="Delivroo">
+      </button>
+    </div>
+
+    <div id="popup"class="popup">
+      <form action="traitement.php" method="post" enctype="multipart/form-data">
+        <header>
+          <img src="./image/uber_Eats_logo_form.png" alt="">
+          <button id="change_platforme" onclick="fermerPopup()">changer</button>
+        </header>
+        <div class="address">
+        <input type="text" id="adresse" name="adresse" placeholder="Adresse de livraison">
+        <input type="text" id="postal" name="postal" placeholder="Postal Code">
+        </div>
+
+        <div class="price">
+        <input type="number" id="prix" name="prix" required placeholder="Prix TTC 30€ MINIMUM">
+        <label class="promotion_input">
+            <input type="checkbox" name="promotion" value="yes"> Promotions
+        </label>
+        </div>
+
+        <div>
+        <input type="text" id="nomResto" name="nomResto" placeholder="Nom Restaurant (ex: Mcdo)">
+        </div>
+        <p>Captures d'écran de la commande et montant TTC</p>
+        <div id="choose">
+          <input type="file" id="actual-btn" hidden/>
+          <label id="choose_img"for="actual-btn">Choisir les images</label>
+          <span id="file-chosen">Pas d'image selectioné</span>
+        </div>
+        <input type="submit" value="Soumettre">
+        <footer>
+          <a href="ubereats://">Ouvrir Uber Eats</a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Problème d'upload ?</a>
+        </footer>
+    </form>
+    </div>
+  </body>
+</html>
