@@ -4,14 +4,14 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <!--Load the AngularJS Library-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tt.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="script.js"></script>
   </head>
   <body>
     <div id="choice" class="choice">
-      <h1>choisisez votre Plateforme</h1>
+      <h1>Choisisez votre Plateforme</h1>
       <button id="uber_eat" onclick="openPopup()">
         <img src="./image/uber-eats-logo.png" alt="Uber_eat">
       </button>
@@ -47,9 +47,11 @@
           <label id="choose_img"for="actual-btn">Choisir les images</label>
           <span id="file-chosen">Pas d'image selectioné</span>
         </div>
-        <input type="submit" value="Soumettre">
+        <div class="btn_sumbit">
+          <input  class="submit" value="Soumettre">
+        </div>
         <footer>
-          <a href="ubereats://">Ouvrir Uber Eats</a>
+          <a href="https://www.ubereats.com">Ouvrir Uber Eats</a>
           <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Problème d'upload ?</a>
         </footer>
     </form>
